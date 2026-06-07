@@ -1,0 +1,44 @@
+<style>
+  .mode-landscape .sl-cards { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-cards { grid-template-columns: 1fr; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col w-full h-full p-12">
+    <div class="flex items-end justify-between mb-8">
+      <div>
+        <div class="text-xs font-semibold tracking-widest text-teal-700 uppercase">Core Features</div>
+        <h2 class="mt-2 text-4xl font-bold text-slate-900 tracking-tight">Built around the people running the clinic</h2>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-8">
+      <span class="px-4 py-2 rounded-full bg-teal-700 text-white text-sm font-semibold">Front-desk coordinator</span>
+      <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-600 text-sm font-medium border border-slate-200">Dental assistant / hygienist</span>
+      <span class="px-4 py-2 rounded-full bg-slate-100 text-slate-600 text-sm font-medium border border-slate-200">Office manager</span>
+    </div>
+
+    <div class="sl-cards grid gap-6 flex-1 min-h-0">
+      <div class="rounded-2xl border border-slate-200 p-7 flex flex-col bg-white shadow-sm">
+        <div class="w-11 h-11 rounded-xl bg-teal-100 flex items-center justify-center">
+          <span class="text-teal-800 text-xl font-bold">◷</span>
+        </div>
+        <h3 class="mt-5 text-xl font-bold text-slate-900">Schedule & confirmations</h3>
+        <p class="mt-2 text-slate-600 text-base leading-relaxed">Daily and weekly views. Book, reschedule, and confirm patients without leaving the screen. No-show flags surface risk early.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 p-7 flex flex-col bg-white shadow-sm">
+        <div class="w-11 h-11 rounded-xl bg-teal-100 flex items-center justify-center">
+          <span class="text-teal-800 text-xl font-bold">✓</span>
+        </div>
+        <h3 class="mt-5 text-xl font-bold text-slate-900">Patient check-in</h3>
+        <p class="mt-2 text-slate-600 text-base leading-relaxed">One-tap check-in pulls the patient's plan and balance forward so the assistant and biller see exactly what's next.</p>
+      </div>
+      <div class="rounded-2xl p-7 flex flex-col bg-slate-900 text-white">
+        <div class="w-11 h-11 rounded-xl flex items-center justify-center" style="background:#fda4a4">
+          <span class="text-slate-900 text-xl font-bold">!</span>
+        </div>
+        <h3 class="mt-5 text-xl font-bold">No-show workflow</h3>
+        <p class="mt-2 text-slate-300 text-base leading-relaxed">Confirmation and reminder flows are built into scheduling — not bolted on. Mark, flag, and reschedule in one move.</p>
+      </div>
+    </div>
+  </div>
+</section>
