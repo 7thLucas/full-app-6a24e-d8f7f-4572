@@ -1,0 +1,39 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column-reverse; }
+  .mode-portrait .sl-text { padding-right: 0; }
+  .mode-portrait .sl-visual { height: 45%; width: 100%; }
+  .mode-landscape .sl-visual { width: 42%; height: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex w-full h-full">
+    <div class="sl-text flex flex-col justify-between flex-1 p-12 pr-10">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200">
+          <span class="w-2 h-2 rounded-full bg-teal-600"></span>
+          <span class="text-xs font-semibold tracking-widest text-teal-800 uppercase">For Dental Clinic Staff</span>
+        </div>
+        <h1 class="mt-8 text-6xl font-bold leading-[1.05] text-slate-900 tracking-tight">
+          Run the clinic.<br/>
+          <span class="text-teal-700">Not the chaos.</span>
+        </h1>
+        <p class="mt-6 text-xl text-slate-600 leading-relaxed max-w-xl">
+          One workspace for appointments, treatment plans, and billing — built to cut no-shows and keep patient care moving.
+        </p>
+      </div>
+      <div class="flex items-end justify-between">
+        <data-attribution />
+        <div class="text-right">
+          <div class="text-xs uppercase tracking-widest text-slate-400">Creative Blueprint</div>
+          <div class="text-sm font-semibold text-slate-700 mt-1">v1 · Cover</div>
+        </div>
+      </div>
+    </div>
+    <div class="sl-visual relative overflow-hidden">
+      <img src="http://localhost:8001/common/image-generation?prompt=editorial%20photograph%20of%20a%20calm%20modern%20dental%20clinic%20front%20desk%2C%20soft%20teal%20and%20cream%20palette%2C%20natural%20light%2C%20clean%20minimal%20healthcare%20interior%2C%20depth%20of%20field"
+           alt="Modern dental clinic front desk"
+           class="absolute inset-0 w-full h-full object-cover"/>
+      <div class="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-white/30"></div>
+    </div>
+  </div>
+</section>
